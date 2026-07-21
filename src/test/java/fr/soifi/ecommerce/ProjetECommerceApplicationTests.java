@@ -1,4 +1,4 @@
-package fr.soif.ecommerce;
+package fr.soifi.ecommerce;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
