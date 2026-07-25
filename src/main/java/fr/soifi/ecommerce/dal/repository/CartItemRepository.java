@@ -1,5 +1,7 @@
 package fr.soifi.ecommerce.dal.repository;
 
-// TODO: repository Spring Data pour CartItem
-public interface CartItemRepository {
+import fr.soifi.ecommerce.dal.entity.CartItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CartItemRepository extends JpaRepository<CartItem, Long> {
 }

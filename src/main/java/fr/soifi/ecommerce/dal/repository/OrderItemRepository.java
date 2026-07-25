@@ -1,5 +1,7 @@
 package fr.soifi.ecommerce.dal.repository;
 
-// TODO: repository Spring Data pour OrderItem
-public interface OrderItemRepository {
+import fr.soifi.ecommerce.dal.entity.OrderItem;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderItemRepository extends JpaRepository<OrderItem, Long> {
 }
