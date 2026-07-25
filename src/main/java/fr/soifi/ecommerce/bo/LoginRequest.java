@@ -1,5 +1,13 @@
 package fr.soifi.ecommerce.bo;
 
-// TODO: BO LoginRequest
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class LoginRequest {
+    private String email;
+    private String password;
 }
