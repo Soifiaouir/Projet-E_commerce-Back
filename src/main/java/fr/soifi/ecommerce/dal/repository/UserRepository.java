@@ -1,5 +1,12 @@
 package fr.soifi.ecommerce.dal.repository;
 
-// TODO: repository Spring Data pour User
-public interface UserRepository {
+import fr.soifi.ecommerce.dal.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    Optional<User> findByEmail(String email);
+
+    boolean existsByEmail(String email);
 }
