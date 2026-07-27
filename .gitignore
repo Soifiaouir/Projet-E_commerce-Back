@@ -1,8 +1,12 @@
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+.idea/
+*.iml
+.vscode/
+application-dev.properties
+application-local.properties
+*.log
+.DS_Store
 
 ### STS ###
 .apt_generated
@@ -16,7 +20,6 @@ target/
 ### IntelliJ IDEA ###
 .idea
 *.iws
-*.iml
 *.ipr
 
 ### NetBeans ###
@@ -33,7 +36,7 @@ build/
 .vscode/
 
 ### Spring Boot ###
-application-local.properties
 application-local.yml
 *.env
 .env
+
