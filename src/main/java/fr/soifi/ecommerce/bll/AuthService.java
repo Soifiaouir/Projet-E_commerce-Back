@@ -1,5 +1,10 @@
 package fr.soifi.ecommerce.bll;
 
-// TODO: interface de service AuthService
+import fr.soifi.ecommerce.bo.JwtResponse;
+import fr.soifi.ecommerce.bo.LoginRequest;
+import fr.soifi.ecommerce.bo.RegisterRequest;
+
 public interface AuthService {
+    JwtResponse register(RegisterRequest request);
+    JwtResponse login(LoginRequest request);
 }
